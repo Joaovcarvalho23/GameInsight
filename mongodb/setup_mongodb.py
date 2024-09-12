@@ -5,11 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-username = os.getenv("MONGO_USER")
-password = os.getenv("MONGO_PASSWORD")
-
-connection_string = f"mongodb+srv://{username}:{password}@cluster-gameinsight.suh1e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-GameInsight"
-
+connection_string = os.getenv("MONGO_URI")
 
 client = MongoClient(connection_string)
 
