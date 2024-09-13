@@ -15,7 +15,6 @@ collection = db["games"]
 file_path = os.path.join("data", "vgsales.csv")
 
 data = pd.read_csv(file_path)
-
 data_dict = data.to_dict("records")
 
 collection.insert_many(data_dict)
