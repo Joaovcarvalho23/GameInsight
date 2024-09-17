@@ -26,4 +26,4 @@ Optamos por usar o **MongoDB** para armazenar os dados de vendas, e o **Neo4j** 
 
 Na raiz do projeto, instale as dependências com o comando abaixo:
 
-pip install -r requirements.txt
+pip install pymongo neo4j python-dotenv pandas
