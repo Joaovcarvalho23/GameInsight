@@ -1,5 +1,7 @@
 # GameInsight
 
+### Alunos: Apolo Albuquerque, Gabriel Leão, Geraldo Gonçalves e João Cordeiro
+
 **GameInsight** é uma plataforma de análise e recomendação de Video Games baseada em dados históricos de vendas. O projeto utiliza **MongoDB** para armazenar os dados de vendas e **Neo4j** para criar relações entre jogos, publicadoras, plataformas e jogadores.
 
 **GameInsight** é uma plataforma de análise e recomendação de Video Games baseada em dados históricos de vendas, destinada a jogadores, desenvolvedores, publicadoras e pesquisadores do mercado de jogos, que serão as nossas entidades. O modelo de negócio se baseia em oferecer insights valiosos a partir dos dados de vendas de jogos em diferentes plataformas e continentes, utilizando análises avançadas e visualizações interativas.
@@ -17,13 +19,12 @@ Optamos por usar o **MongoDB** para armazenar os dados de vendas, e o **Neo4j** 
 1. Execute `setup_neo4j.py` para importar dados do MongoDB para o Neo4j.
 2. Execute as consultas no arquivo `queries_neo4j.cypher` no Neo4j.
 
-### Notebooks
+### Consultas Combinadas
 
-- Use `analysis.ipynb` para análise no MongoDB.
-- Use `graph_analysis.ipynb` para explorar grafos no Neo4j.
+1. Use `consultas_combinadas.py` para executar consultas combinando Neo4j e MongoDB.
 
 ## Dependências
 
 Na raiz do projeto, instale as dependências com o comando abaixo:
 
-pip install pymongo neo4j python-dotenv pandas
+pip install pymongo neo4j python-dotenv pandas prettytable

@@ -1,4 +1,5 @@
 pymongo
 neo4j
 pandas
-jupyter
+python-dotenv
+prettytable
